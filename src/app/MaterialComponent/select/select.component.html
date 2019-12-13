@@ -1,0 +1,89 @@
+<div class="m-5">
+
+        <h1 class="m-2 text-center"> Select</h1>
+        <hr>
+
+
+<div class="row">
+    <div class="col">
+        <div class="container m-3 ">
+            <h3>Basic select :</h3>
+                    <mat-form-field>
+                            <mat-label>Names</mat-label>
+                        <mat-select>
+                            <mat-option value="angular" >Angular</mat-option>
+                            <mat-option value="react" >React</mat-option>
+                            <mat-option value="java" >Java</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+    </div>
+    </div>
+    <div class="col">
+            <div class="container m-3 ">
+                <h3>Selected Value :</h3>
+                        <mat-form-field>
+                                <mat-label>Names</mat-label>
+                            <mat-select [(value)]="selectedValue" >
+                                <mat-option>none</mat-option>
+                                <mat-option value="angular" >Angular</mat-option>
+                                <mat-option value="react" >React</mat-option>
+                                <mat-option value="java" >Java</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                       <span> {{selectedValue}}</span>
+             </div>
+    </div>
+    <div class="col">
+                <div class="container m-3 ">
+                    <h3> Group select:</h3>
+                            <mat-form-field>
+                                    <mat-label>Names</mat-label>
+                                <mat-select [(value)]="Multiple">
+                                    <mat-option>none</mat-option>
+                                    <mat-optgroup label="web" >
+                                    <mat-option value="angular" >Angular</mat-option>
+                                    <mat-option value="react" >React</mat-option>
+                                    <mat-option value="java" >Java</mat-option>
+                                </mat-optgroup>
+                                <mat-optgroup label="mobile" >
+                                        <mat-option value="Andriod" >Andriod</mat-option>
+                                        <mat-option value="Swift" >Swift</mat-option>
+                                        <mat-option value="Ionic" >Ionic</mat-option>
+                                    </mat-optgroup>
+                                </mat-select>
+                            </mat-form-field>
+                            <span>{{Multiple}}</span>
+                     
+                 </div>
+    </div>
+
+</div>
+
+<div class="row">
+        <div class="col">
+                <div class="container m-3 ">
+                    <h3> Multiple selected value:</h3>
+                            <mat-form-field>
+                                    <mat-label>Names</mat-label>
+                                <mat-select [(value)]="Multiple2" multiple >
+                                    <mat-option>none</mat-option>
+                                    <mat-optgroup label="web" >
+                                    <mat-option value="angular" >Angular</mat-option>
+                                    <mat-option value="react" >React</mat-option>
+                                    <mat-option value="java" >Java</mat-option>
+                                </mat-optgroup>
+                                <mat-optgroup label="mobile" >
+                                        <mat-option value="Andriod" >Angular</mat-option>
+                                        <mat-option value="Swift" >React</mat-option>
+                                        <mat-option value="Ionic" >Java</mat-option>
+                                    </mat-optgroup>
+                                </mat-select>
+                            </mat-form-field>
+                            <span>{{Multiple2}}</span>
+                     
+                 </div>
+    </div>
+
+</div>
+
+</div>

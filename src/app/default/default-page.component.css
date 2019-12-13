@@ -1,0 +1,39 @@
+.wrapp-svg {
+    margin: 200px;
+    /* background-color: black; */
+}
+.path-text{
+fill: rgba(255, 0, 0, 0) !important;
+stroke: rgb(0, 0, 0);
+stroke-width: 1px;
+/* 2521 from here getTotalLength() */
+stroke-dasharray: 2521; 
+stroke-dashoffset:2521;
+
+
+-webkit-animation: go-now 9s ease-in forwards infinite;
+
+        animation: go-now 9s ease-in forwards infinite;
+}
+@-webkit-keyframes go-now {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        stroke-dashoffset:0;
+        stroke-dasharray: 2521; 
+        stroke-width: 3px;
+        fill: rgb(255, 0, 0);
+}  
+ }
+
+@keyframes go-now {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        stroke-dashoffset:0;
+        stroke-width: 3px;
+        fill: rgb(255, 0, 0);
+    }
+}

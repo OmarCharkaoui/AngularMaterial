@@ -1,0 +1,55 @@
+<div class="m-5">
+        <h1 class="m-2 text-center"> Navbar</h1>
+        <hr>
+<h3>Toolbar : </h3>
+<div class="container mt-3 ">
+
+        <mat-toolbar color="primary" >
+            <span> Hey Bro</span>
+        </mat-toolbar>
+
+</div>
+<hr>
+<h3>Toolbar To Navbar </h3>
+<div class="container mt-3 ">
+<mat-toolbar color="primary" class="NavbarClass" >
+            <div> Omar </div>
+            <div>
+                <span>Home</span>
+                <span>About</span>
+            </div>
+</mat-toolbar>
+</div>
+<hr>
+<h3> Side nav</h3>
+<div class="container mt-3 ">
+    <!-- Mode : over || push || side -->
+        <mat-sidenav-container>
+                <mat-sidenav (opened)="consolLog('opened')" (closed)="consolLog('closed')" #sidenav mode="side" [(opened)]="openClose">Sidenav</mat-sidenav>
+                <mat-sidenav-content>Main Content
+                        <button (click)="openClose=!openClose"> Toggle Side Nav </button>
+                        <button (click)="sidenav.open()"> Open </button>
+                        <button (click)="sidenav.close()"> Close </button>
+                        <button (click)="sidenav.toggle()"> Toggle </button>
+                </mat-sidenav-content>
+        </mat-sidenav-container>
+</div>
+<hr>
+<h3> Menu</h3>
+<div class="container my-3 ">
+        <mat-menu #appMenu="matMenu" >
+            <button mat-menu-item [matMenuTriggerFor]="subMenu" >FrontEnd</button>
+            <button mat-menu-item >BackEnd</button>
+        </mat-menu>
+        <button mat-flat-button [matMenuTriggerFor]="appMenu" >Menu</button>
+</div>
+
+<hr>
+        <mat-menu #subMenu="matMenu" >
+            <button mat-menu-item >Angular</button>
+            <button mat-menu-item >React</button>
+            <button mat-menu-item >Vue</button>
+        </mat-menu>
+
+</div>
+<!-- https://www.youtube.com/watch?v=jUfEn032IL8 -->

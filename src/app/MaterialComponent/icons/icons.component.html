@@ -1,0 +1,82 @@
+<div class="m-5">
+        <h1 class="m-2 text-center">Icons</h1>
+        <hr />
+        <a href="https://material.io/resources/icons/?icon=android&style=baseline" target="_blank">Material icon</a>
+        <hr />
+
+        <div class="container mt-3 ">
+                <mat-icon>android</mat-icon>
+                <mat-icon>build</mat-icon>
+                <mat-icon>calendar_today</mat-icon>
+        </div>
+        <div class="container mt-3 ">
+                <mat-icon color="primary">android</mat-icon>
+                <mat-icon color="warn">build</mat-icon>
+                <mat-icon color="accent">calendar_today</mat-icon>
+                <small>with colors</small>
+        </div>
+        <hr />
+
+        <h1 class="m-2 text-center">Badges</h1>
+        <hr />
+        <div class="container mt-3 ">
+                <span matBadge="5">Notifications</span>
+        </div>
+        <hr />
+
+        <div class="container mt-3 ">
+                <h3>Badge Position :</h3>
+                <div class="border">
+                        <span class="m-3 d-inline-block" matBadgePosition="below before"
+                                matBadge="5">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgePosition="below after"
+                                matBadge="5">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgePosition="above before"
+                                matBadge="5">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgePosition="above after"
+                                matBadge="5">Notifications</span>
+                </div>
+        </div>
+        <hr />
+        <div class="container mt-3 ">
+                <h3>Badge Sizing :</h3>
+                <div class="border">
+                        <span class="m-3 d-inline-block" matBadgeSize="small" matBadge="2">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgeSize="medium" matBadge="2">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgeSize="large" matBadge="2">Notifications</span>
+                </div>
+        </div>
+        <hr />
+        <div class="container mt-3 ">
+                <h3>Badge Colors :</h3>
+                <div class="border">
+                        <span class="m-3 d-inline-block" matBadgeColor="primary" matBadge="2">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgeColor="accent" matBadge="2">Notifications</span>
+
+                        <span class="m-3 d-inline-block" matBadgeColor="warn" matBadge="2">Notifications</span>
+                </div>
+        </div>
+        <hr />
+
+        <div class="container mt-3 ">
+                <h3>Badge Overlap :</h3>
+                <div class="border">
+                        <span class="m-3 d-inline-block" matBadge="2">Notifications</span>
+                        <span class="m-3 d-inline-block" matBadge="2" matBadgeOverlap="false">Notifications</span>
+                </div>
+        </div>
+        <hr />
+        <div class="container mt-3 ">
+                <h3>Badge binding :</h3>
+                <div class="border">
+                        <span class="m-3 d-inline-block" [matBadge]="notification"
+                                [matBadgeHidden]="notification === '0'">Notifications</span>
+                </div>
+        </div>
+</div>

@@ -1,0 +1,42 @@
+
+<div class="m-5">
+<h1 class="m-2 text-center"> Button Toggle </h1>
+<hr>
+<div class="m-1">
+    <mat-button-toggle #toggleBtn >Toggle</mat-button-toggle>
+ <small>State : {{toggleBtn.checked}}</small> 
+</div>
+<div class="m-1">
+<mat-button-toggle #toggleB checked >Toggle</mat-button-toggle>
+ <small>State With Checked : {{toggleB.checked}}</small> 
+</div>
+<div class="m-1">
+<mat-button-toggle disableRipple >Toggle</mat-button-toggle>
+ <small>disableRipple</small> 
+</div>
+<div class="m-1">
+<mat-button-toggle  disabled >Toggle</mat-button-toggle>
+<small> disabled</small>
+</div>
+<div class="mt-1" >
+        <mat-button-toggle-group #toggleGRoupe="matButtonToggleGroup" >
+            <mat-button-toggle value="c#"> C# </mat-button-toggle>
+            <mat-button-toggle value="Java"> Java </mat-button-toggle>
+            <mat-button-toggle value="php"> Php </mat-button-toggle>
+        </mat-button-toggle-group>
+    <small >Toggle Group</small>
+    <br>
+  <p  class="mt-2"> Value : {{ toggleGRoupe.value}} </p>
+</div>
+<div class="mt-1" >
+        <mat-button-toggle-group #toggleGRoupeM="matButtonToggleGroup" multiple >
+            <mat-button-toggle value="c#"> C# </mat-button-toggle>
+            <mat-button-toggle value="Java"> Java </mat-button-toggle>
+            <mat-button-toggle value="php"> Php </mat-button-toggle>
+        </mat-button-toggle-group>
+    <small >Toggle Multiple Group</small>
+    <br>
+  <p  class="mt-2"> Value : {{ toggleGRoupeM.value}} </p>
+ 
+</div>
+</div>

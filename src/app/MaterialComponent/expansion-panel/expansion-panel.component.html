@@ -1,0 +1,113 @@
+<div class="m-5">
+        <h1 class="m-2 text-center"> Expansion Panel</h1>
+<hr>
+<div class="container mt-3">
+    <mat-expansion-panel>
+
+            <mat-expansion-panel-header>
+                    <mat-panel-title> Angular Material </mat-panel-title>
+                    <mat-panel-description> Prix : Free </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>Panel Content Here</p>
+
+            <mat-action-row>
+                <button mat-button > Click </button>
+            </mat-action-row>
+        
+    </mat-expansion-panel>
+
+</div>
+<hr>
+<h3>Accordion : </h3>
+<div class="container mt-3">
+    <mat-accordion>
+        <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                        <mat-panel-title> PHP </mat-panel-title>
+                        <mat-panel-description> Prix : 20$ </mat-panel-description>
+                </mat-expansion-panel-header>
+    
+                <p>Panel Content Here</p>
+    
+                <mat-action-row>
+                    <button mat-button > Click </button>
+                </mat-action-row>
+            
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                        <mat-panel-title> Java </mat-panel-title>
+                        <mat-panel-description> Prix : 100$ </mat-panel-description>
+                </mat-expansion-panel-header>
+    
+                <p>Panel Content Here</p>
+    
+                <mat-action-row>
+                    <button mat-button > Click </button>
+                </mat-action-row>
+            
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+<hr>
+<h1 class="m-2 text-center"> Cards</h1>
+<div class="container mt-3">
+<mat-card>
+    <mat-card-title>Card Title</mat-card-title>
+    <mat-card-content>Card Content</mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button >Login</button>
+    </mat-card-actions>
+
+</mat-card>
+</div>
+<h1 class="m-2 text-center"> Tabs</h1>
+<div class="container m-3">
+<mat-tab-group>
+    <mat-tab label="Angular"> Angular Content </mat-tab>
+    <mat-tab label="React"> React Content </mat-tab>
+    <mat-tab label="Vue"> Vue Content </mat-tab>
+</mat-tab-group>
+</div>
+<hr>
+<div class="container m-3">
+    <mat-tab-group #tab >
+        <mat-tab label="Angular"> Angular Content </mat-tab>
+        <mat-tab label="React"> React Content </mat-tab>
+        <mat-tab label="Vue"> Vue Content </mat-tab>
+    </mat-tab-group>
+    <p> selectedIndex :  {{ tab.selectedIndex}}</p>
+    </div>
+   
+    <h1 class="m-2 text-center"> Stepper</h1>
+<div class="container m-3">
+    <mat-horizontal-stepper>
+        <mat-step label="Step 1" >Step 1 Content </mat-step>
+        <mat-step label="Step 2" >Step 2 Content
+                <div>
+                        <button mat-button matStepperPrevious >Back</button>
+                        <button mat-button matStepperNext >Next</button>
+                    </div>    
+        </mat-step>
+        <mat-step label="Step 3" >Step 3 Content </mat-step>
+    </mat-horizontal-stepper>
+</div>
+<hr>
+
+<div class="container m-3">
+        <mat-vertical-stepper>
+            <mat-step label="Step 1" >Step 1 Content </mat-step>
+            <mat-step label="Step 2" >Step 2 Content
+                    <div>
+                            <button mat-button matStepperPrevious >Back</button>
+                            <button mat-button matStepperNext >Next</button>
+                        </div>    
+            </mat-step>
+            <mat-step label="Step 3" >Step 3 Content </mat-step>
+        </mat-vertical-stepper>
+    </div>
+    <hr>

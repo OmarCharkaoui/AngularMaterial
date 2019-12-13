@@ -1,0 +1,34 @@
+<div class="m-5">
+        <h1 class="m-2 text-center"> Date Picker</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="container m-3 ">
+                        <h3>Basic Date Picker :</h3>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="mydatepicker" />
+                        <mat-datepicker-toggle matSuffix [for]="mydatepicker" ></mat-datepicker-toggle>
+                        <mat-datepicker #mydatepicker ></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <h1 class="m-2 text-center">Tooltip</h1>
+        <hr>
+        <div class="row">
+                <div class="col">
+                    <div class="container m-3 ">
+                            <h3>Basic tooltip :</h3>
+                        <button mat-raised-button matTooltip="Welcome to nothing" > Hello World </button>
+                    </div>
+                </div>
+                <div class="col">
+                        <div class="container m-3 ">
+                                <h3>tooltip Position :</h3>
+                            <button mat-raised-button matTooltip="Welcome to nothing"
+                            matTooltipPosition="after"
+                            > Hello World </button>
+                        </div>
+                    </div>
+        </div>
+</div>
